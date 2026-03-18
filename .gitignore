@@ -1,5 +1,4 @@
 # CodeIgniter 4
-vendor/
 writable/logs/*
 !writable/logs/index.html
 writable/cache/*
