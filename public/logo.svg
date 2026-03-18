@@ -1,0 +1,12 @@
+<svg width="120" height="48" viewBox="0 0 600 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- N -->
+  <path d="M10 200 L10 20 L50 20 L140 160 L140 20 L180 20 L180 200 L140 200 L50 60 L50 200 Z" stroke="black" stroke-width="8" fill="none"/>
+  <!-- Y -->
+  <path d="M190 20 L230 20 L280 100 L330 20 L370 20 L300 130 L300 200 L260 200 L260 130 Z" stroke="black" stroke-width="8" fill="none"/>
+  <!-- Z -->
+  <path d="M380 20 L560 20 L560 55 L430 165 L560 165 L560 200 L380 200 L380 165 L510 55 L380 55 Z" stroke="black" stroke-width="8" fill="none"/>
+  <!-- A -->
+  <path d="M500 200 L560 20 L600 20 L660 200 L620 200 L605 155 L555 155 L540 200 Z M565 125 L595 125 L580 65 Z" stroke="black" stroke-width="8" fill="none" transform="translate(-80, 0)"/>
+  <!-- STUDIO text -->
+  <text x="430" y="215" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="48" fill="black" letter-spacing="4">STUDIO</text>
+</svg>
