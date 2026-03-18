@@ -5,9 +5,9 @@
             <div class="col-md-5 text-center text-md-start mb-5 mb-md-0">
                 <img src="<?= base_url('uploads/paper-plane.png') ?>" alt="Send us a message" class="contact-illustration">
                 <h2 class="section-heading">
-                    Shoot us<br><span class="text-purple">an Message</span>
+                    SHOOT US<br><span class="text-purple">AN MESSAGE</span>
                 </h2>
-                <p class="text-muted mt-2" style="font-size: 0.9rem;">
+                <p class="text-muted mt-2" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em;">
                     Get in touch with us by sending us a message.
                 </p>
             </div>
@@ -17,28 +17,28 @@
                 <form id="contactForm" action="<?= base_url('contact/submit') ?>" method="POST">
                     <div class="row g-3">
                         <div class="col-6">
-                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                            <input type="text" name="name" class="form-control" placeholder="NAME" required>
                         </div>
                         <div class="col-6">
-                            <input type="text" name="surname" class="form-control" placeholder="Surname" required>
+                            <input type="text" name="surname" class="form-control" placeholder="SURNAME" required>
                         </div>
                         <div class="col-6">
-                            <input type="email" name="email" class="form-control" placeholder="E-Mail" required>
+                            <input type="email" name="email" class="form-control" placeholder="E-MAIL" required>
                         </div>
                         <div class="col-6">
-                            <input type="tel" name="number" class="form-control" placeholder="Number">
+                            <input type="tel" name="number" class="form-control" placeholder="NUMBER">
                         </div>
                         <div class="col-6">
-                            <input type="text" name="company" class="form-control" placeholder="Company">
+                            <input type="text" name="company" class="form-control" placeholder="COMPANY">
                         </div>
                         <div class="col-6">
-                            <input type="text" name="budget" class="form-control" placeholder="Budget">
+                            <input type="text" name="budget" class="form-control" placeholder="BUDGET">
                         </div>
                         <div class="col-12">
-                            <textarea name="message" class="form-control" rows="4" placeholder="Text Here" required></textarea>
+                            <textarea name="message" class="form-control" rows="4" placeholder="TEXT HERE" required></textarea>
                         </div>
                         <div class="col-12 text-end">
-                            <button type="submit" class="btn-purple">Send</button>
+                            <button type="submit" class="btn-purple btn-send">SEND</button>
                         </div>
                     </div>
                 </form>
