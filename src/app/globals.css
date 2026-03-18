@@ -1,10 +1,51 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Benzin";
+  src: url("/fonts/Benzin Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Benzin";
+  src: url("/fonts/Benzin Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Benzin";
+  src: url("/fonts/Benzin Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Benzin";
+  src: url("/fonts/Benzin Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Benzin";
+  src: url("/fonts/Benzin Extra Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   --color-purple: #7C3AED;
   --color-purple-dark: #6D28D9;
   --color-purple-light: #A78BFA;
-  --font-sans: "Inter", sans-serif;
+  --font-sans: "Benzin", sans-serif;
+  --font-benzin: "Benzin", sans-serif;
 }
 
 * {
@@ -16,7 +57,7 @@
 body {
   background: #ffffff;
   color: #000000;
-  font-family: "Inter", sans-serif;
+  font-family: "Benzin", sans-serif;
   overflow-x: hidden;
 }
 

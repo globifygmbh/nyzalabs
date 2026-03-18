@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-purple/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-tight tracking-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-benzin font-black uppercase leading-tight tracking-tight">
           Custom Web Solutions &
           <br />
           <span className="text-purple">Social Media Stuff</span>

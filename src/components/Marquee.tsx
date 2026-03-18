@@ -7,7 +7,7 @@ export default function Marquee() {
         {[...items, ...items, ...items, ...items].map((item, i) => (
           <span
             key={i}
-            className="text-5xl md:text-7xl lg:text-8xl font-black uppercase mx-4 md:mx-8 text-black"
+            className="text-5xl md:text-7xl lg:text-8xl font-benzin font-black uppercase mx-4 md:mx-8 text-black"
           >
             {item}
             <span className="text-purple mx-4 md:mx-8">·</span>

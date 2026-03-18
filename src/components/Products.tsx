@@ -5,7 +5,7 @@ export default function Products() {
     <section id="products" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black uppercase leading-tight">
+          <h2 className="text-3xl md:text-5xl font-benzin font-black uppercase leading-tight">
             Our Products:
             <br />
             One monthly price. For all.

@@ -24,7 +24,7 @@ export default function References() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
           <div>
-            <h2 className="text-3xl md:text-5xl font-black uppercase leading-tight">
+            <h2 className="text-3xl md:text-5xl font-benzin font-black uppercase leading-tight">
               Take a look at
               <br />
               our References
