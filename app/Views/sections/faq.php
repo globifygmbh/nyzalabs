@@ -1,16 +1,16 @@
-<section class="py-5 faq-section">
+<section class="section-spacing faq-section">
     <div class="container">
         <div class="mx-auto" style="max-width: 700px;">
-            <h2 class="section-heading display-4 text-center mb-3">FAQ</h2>
-            <hr class="border-dark mb-4">
+            <h2 class="faq-title">FAQ</h2>
+            <hr class="faq-divider">
 
             <div class="accordion" id="faqAccordion">
                 <?php
                 $faqs = [
-                    ['q' => 'This is an FAQ question?', 'a' => 'Unfolded answer of the question that is long unfolded answer of the question that is longer. Text is longer unfolded answer of the question that is longer.'],
-                    ['q' => 'This is an FAQ question?', 'a' => 'Unfolded answer of the question that is long unfolded answer of the question that is longer. Text is longer unfolded answer of the question that is longer.'],
-                    ['q' => 'This is an FAQ question?', 'a' => 'Unfolded answer of the question that is long unfolded answer of the question that is longer. Text is longer unfolded answer of the question that is longer.'],
-                    ['q' => 'This is an FAQ question?', 'a' => 'Unfolded answer of the question that is long unfolded answer of the question that is longer. Text is longer unfolded answer of the question that is longer.'],
+                    ['q' => 'THIS IS AN FAQ QUESTION?', 'a' => 'UNFOLDED ANSWER OF THE QUESTION THAT IS LONG UNFOLDED ANSWER OF THE QUESTION THAT IS LONGER. TEXT IS LONGER UNFOLDED ANSWER OF THE QUESTION THAT IS LONGER.'],
+                    ['q' => 'THIS IS AN FAQ QUESTION?', 'a' => 'UNFOLDED ANSWER OF THE QUESTION THAT IS LONG UNFOLDED ANSWER OF THE QUESTION THAT IS LONGER. TEXT IS LONGER UNFOLDED ANSWER OF THE QUESTION THAT IS LONGER.'],
+                    ['q' => 'THIS IS AN FAQ QUESTION?', 'a' => 'UNFOLDED ANSWER OF THE QUESTION THAT IS LONG UNFOLDED ANSWER OF THE QUESTION THAT IS LONGER. TEXT IS LONGER UNFOLDED ANSWER OF THE QUESTION THAT IS LONGER.'],
+                    ['q' => 'THIS IS AN FAQ QUESTION?', 'a' => 'UNFOLDED ANSWER OF THE QUESTION THAT IS LONG UNFOLDED ANSWER OF THE QUESTION THAT IS LONGER. TEXT IS LONGER UNFOLDED ANSWER OF THE QUESTION THAT IS LONGER.'],
                 ];
                 foreach ($faqs as $i => $faq):
                 ?>
