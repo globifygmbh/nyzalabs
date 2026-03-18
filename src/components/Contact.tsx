@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Image from "next/image";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -15,7 +16,6 @@ export default function Contact() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // TODO: Add form submission logic
     console.log("Form submitted:", formData);
   };
 
@@ -25,15 +25,13 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left side - Illustration */}
           <div className="flex flex-col items-center md:items-start">
-            <div className="w-64 h-64 bg-gradient-to-br from-purple/10 to-purple/5 rounded-3xl flex items-center justify-center mb-8">
-              <div className="text-center">
-                <div className="text-6xl mb-4">✉️</div>
-                <div className="w-16 h-16 bg-purple rounded-full flex items-center justify-center mx-auto">
-                  <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
-                </div>
-              </div>
+            <div className="relative w-64 h-64 mb-8">
+              <Image
+                src="/uploads/paper-plane.png"
+                alt="Send us a message"
+                fill
+                className="object-contain"
+              />
             </div>
             <h2 className="text-3xl md:text-4xl font-black uppercase leading-tight">
               Shoot us

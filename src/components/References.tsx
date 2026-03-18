@@ -1,22 +1,21 @@
+import Image from "next/image";
+
 export default function References() {
   const references = [
     {
       title: "Red Bull",
       subtitle: "RedBull verleiht Flüüügel",
-      color: "from-yellow-400 to-yellow-500",
-      icon: "🐂",
+      image: "/uploads/redbull-card.jpg",
     },
     {
-      title: "Car Dealership",
-      subtitle: "Premium Auto Platform",
-      color: "from-gray-700 to-gray-900",
-      icon: "🚗",
+      title: "Gassner Motorsport",
+      subtitle: "Rally & Motorsport Content",
+      image: "/uploads/gassner-motorsport.jpg",
     },
     {
-      title: "Influencer Brand",
-      subtitle: "Personal Branding",
-      color: "from-red-400 to-pink-500",
-      icon: "👤",
+      title: "Ottakringer",
+      subtitle: "Social Media Campaign",
+      image: "/uploads/ottakringer.jpg",
     },
   ];
 
@@ -49,14 +48,16 @@ export default function References() {
               key={ref.title}
               className="group relative rounded-2xl overflow-hidden aspect-[4/5] cursor-pointer"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${ref.color}`} />
-              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors" />
-              <div className="relative z-10 p-6 flex flex-col justify-between h-full">
-                <div className="text-4xl">{ref.icon}</div>
-                <div>
-                  <h3 className="text-white font-bold text-xl">{ref.title}</h3>
-                  <p className="text-white/80 text-sm mt-1">{ref.subtitle}</p>
-                </div>
+              <Image
+                src={ref.image}
+                alt={ref.title}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="relative z-10 p-6 flex flex-col justify-end h-full">
+                <h3 className="text-white font-bold text-xl">{ref.title}</h3>
+                <p className="text-white/80 text-sm mt-1">{ref.subtitle}</p>
               </div>
             </div>
           ))}

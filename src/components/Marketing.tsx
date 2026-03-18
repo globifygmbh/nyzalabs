@@ -1,3 +1,4 @@
+import Image from "next/image";
 import NyzaLogo from "./NyzaLogo";
 
 export default function Marketing() {
@@ -45,8 +46,8 @@ export default function Marketing() {
             </h3>
           </div>
 
-          {/* Social Icons Card */}
-          <div className="bg-purple rounded-2xl p-6 flex flex-col justify-center items-center aspect-square col-span-2 md:col-span-2">
+          {/* Social Icons Card - spans 2 cols */}
+          <div className="bg-purple rounded-2xl p-6 flex flex-col justify-center items-center aspect-auto md:aspect-auto col-span-2">
             <div className="flex items-center gap-4 flex-wrap justify-center">
               {/* LinkedIn */}
               <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
@@ -75,30 +76,41 @@ export default function Marketing() {
             </div>
           </div>
 
-          {/* Ready for the next step? */}
-          <div className="bg-purple rounded-2xl p-6 flex flex-col justify-center aspect-square">
-            <h3 className="text-white font-black text-xl uppercase leading-tight">
-              Ready
-              <br />
-              for the
-              <br />
-              next
-              <br />
-              step?
-            </h3>
+          {/* Ready for the next step? - with image */}
+          <div className="relative bg-purple rounded-2xl overflow-hidden aspect-square">
+            <Image
+              src="/uploads/cool-bleiben.jpg"
+              alt="Ready for the next step"
+              fill
+              className="object-cover opacity-40"
+            />
+            <div className="relative z-10 p-6 flex flex-col justify-center h-full">
+              <h3 className="text-white font-black text-xl uppercase leading-tight">
+                Ready
+                <br />
+                for the
+                <br />
+                next
+                <br />
+                step?
+              </h3>
+            </div>
           </div>
 
-          {/* Tailored To */}
-          <div className="bg-gray-100 rounded-2xl p-6 flex flex-col justify-center items-center aspect-square">
-            <h3 className="text-lg font-black uppercase text-center leading-tight">
+          {/* Tailored To - with target icon */}
+          <div className="bg-gray-100 rounded-2xl p-4 flex flex-col justify-center items-center aspect-square relative overflow-hidden">
+            <h3 className="text-lg font-black uppercase text-center leading-tight mb-2 relative z-10">
               Tailored
               <br />
               to
             </h3>
-            <div className="mt-3 w-10 h-10 text-purple">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+            <div className="relative w-20 h-20">
+              <Image
+                src="/uploads/target-3d.png"
+                alt="Target"
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
 
@@ -109,18 +121,21 @@ export default function Marketing() {
             <span className="text-white/50 text-[10px] uppercase mt-1">Free Promise</span>
           </div>
 
-          {/* Your Audience */}
-          <div className="bg-gray-100 rounded-2xl p-6 flex flex-col justify-center items-center aspect-square">
-            <div className="w-14 h-14 bg-purple/10 rounded-full flex items-center justify-center mb-3">
-              <svg className="w-7 h-7 text-purple" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
+          {/* Your Audience - with sushi image */}
+          <div className="relative bg-gray-100 rounded-2xl overflow-hidden aspect-square">
+            <Image
+              src="/uploads/sushi.jpg"
+              alt="Your Audience"
+              fill
+              className="object-cover opacity-30"
+            />
+            <div className="relative z-10 p-6 flex flex-col justify-center items-center h-full">
+              <h3 className="text-sm font-black uppercase text-center">
+                Your
+                <br />
+                Audience
+              </h3>
             </div>
-            <h3 className="text-sm font-black uppercase text-center">
-              Your
-              <br />
-              Audience
-            </h3>
           </div>
 
           {/* We Grow Brands */}
